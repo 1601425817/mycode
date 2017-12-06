@@ -1,0 +1,14 @@
+package office;
+
+import java.util.List;
+
+/*
+ * 办公用品管理
+ */
+public interface OfficeSuppliesService {
+	public boolean officeSuppliesApplication(); //办公用品申请
+	public boolean officeSuppliesAudit(); //办公用品审核
+	public void officeSuppliesDistribute(); //办公用品发放
+	public List<OfficeSupplies> officeSuppliesSearching(); //办公用品查找
+	
+}

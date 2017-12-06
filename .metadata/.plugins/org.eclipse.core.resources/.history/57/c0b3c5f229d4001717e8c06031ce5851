@@ -1,0 +1,10 @@
+package office;
+
+import java.util.List;
+
+public interface AuthorityService {
+	public boolean addAuthority();
+	public boolean changeAuthority();
+	public boolean removeAuthority();
+	public List<authority> AuthoritySearching();
+}

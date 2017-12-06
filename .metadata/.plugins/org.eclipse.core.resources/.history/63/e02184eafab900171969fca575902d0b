@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class MaxProduct {
+
+	private void findMAX(int[] array, int n) {
+		// TODO Auto-generated method stub
+
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		int[] array = new int[n+1];
+		for(int i = 1; i <= n; i++)
+		{
+			
+		}
+
+	}
+
+}

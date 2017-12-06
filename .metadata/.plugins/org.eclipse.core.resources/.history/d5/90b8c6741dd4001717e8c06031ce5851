@@ -1,0 +1,8 @@
+package office;
+
+/*
+ * 收文管理
+ */
+public interface ReceiveService {
+
+}

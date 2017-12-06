@@ -1,0 +1,37 @@
+
+class runThread extends Thread{
+
+	@Override
+	public void run() {
+		for(int i = 0; i < 100; i++)
+		{
+			System.out.println("run  "+i);
+		}
+
+	}
+	
+}
+public class TestRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+			System.out.println("current:"+Thread.currentThread().getName());
+			runThread mythread = new runThread();
+			mythread.start();
+			try {
+				mythread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.println("current:"+Thread.currentThread().getName());
+			
+	
+		for(int i = 0; i < 1000; i++)
+		{
+			System.out.println("main  "+i);
+		}													
+	}
+
+}

@@ -1,0 +1,16 @@
+
+public class TestStringBuffer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuffer aBuffer = "A";
+		StringBuffer buffer = "B";
+		operator(a, b);
+	}
+	public static void operator(StringBuffer a,StringBuffer b)
+	{
+		a.append(b);
+		b = a;
+	}
+
+}

@@ -1,0 +1,7 @@
+package office;
+
+public interface AuthorityService {
+	public boolean addAuthority();
+	public boolean changeAuthority();
+	public boolean removeAutohrity();
+}

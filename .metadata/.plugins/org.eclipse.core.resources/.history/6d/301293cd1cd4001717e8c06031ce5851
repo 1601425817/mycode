@@ -1,0 +1,6 @@
+package office;
+
+public interface PostService {
+	public void Draft(); //Äâ¸å
+	public void Issued(); 
+}

@@ -1,0 +1,27 @@
+
+class runThread extends Thread{
+
+	@Override
+	public void run() {
+		
+	}
+	
+}
+public class TestRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			runThread mythread = new runThread();
+			mythread.start();
+			for(int i = 0; i < 100; i++)
+			{
+				System.out.println("main  "+i);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	
+	}
+
+}

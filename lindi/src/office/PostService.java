@@ -1,0 +1,14 @@
+package office;
+
+/*
+ * 发文管理
+ */
+public interface PostService {
+	public void draft(); //拟稿
+	public void issued(); //签发
+	public boolean proofreading(); //校对
+	public void archive(); //归档
+	public boolean postAudit(); //发文审核
+	public Post print(); // 打印
+	public void postDistribute(int[] members); //发文分发
+}

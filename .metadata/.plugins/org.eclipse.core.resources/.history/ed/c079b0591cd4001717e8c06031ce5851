@@ -1,0 +1,9 @@
+package lindi;
+
+public interface MeetingService {
+	public void BookingMeeting();  //预订会议
+	public void SearchingMeeting();  //查找会议
+	public void ChangeMeeting(); //修改会议
+	public void RecordMeeting(); //
+	
+}

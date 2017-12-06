@@ -1,0 +1,12 @@
+package office;
+
+/*
+ * 收文管理
+ */
+public interface ReceiveService {
+	public void registration(); //收文登记
+	public void receivedistribute(); //收文分发
+	public void receiveAudit(); //收文审核
+	public void reviseOpinion(); //修改意见
+	public void 
+}

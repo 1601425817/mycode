@@ -1,0 +1,12 @@
+package office;
+
+/*
+ * 车辆管理服务
+ */
+public interface vehicleService {
+	public boolean carAudit(); //收文审核
+	public boolean vehicleApplication(); //车辆申请
+	public void vehicleRegistration(); //车辆登记
+	
+	
+}

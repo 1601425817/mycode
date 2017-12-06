@@ -1,0 +1,16 @@
+package office;
+
+import java.util.List;
+
+/*
+ * 车辆管理服务
+ */
+public interface VehicleService {
+	public boolean carAudit(); //收文审核
+	public boolean vehicleApplication(); //车辆申请
+	public void vehicleRegistration(); //车辆登记
+	public List<Vehicle> vehicleSearching(); //车辆查询
+	public int vehicle
+	
+	
+}

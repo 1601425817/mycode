@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.finacialsys.mapper.UserMapper">
+
+	
+	  <resultMap id="UserMap" type="User">
+		     <id property = "userID" column = "user_ID" />
+		     <result property = "userPassword" column = "user_Password" />
+		     <result property = "userName" column = "user_Name" />
+		     <result property = "userGender" column = "user_Gender" />
+		     <result property = "userNickname" column = "user_Nickname" />
+		     <result property = "userPic" column = "user_Pic" />
+		     <result property = "userAddress" column = "user_Address" />
+		   <association property="userGroup" javaType="UserGroup">
+             <id property = "groupID" column = "group_ID" />		   
+		     <result property = "groupName" column = "group_Name" /> 
+		     <result property = "groupSum" column = "group_Sum" />
+		     <result property = "groupMsg" column = "group_Msg" />
+		   </association>
+		     <association property="level" javaType="Level">
+             <id property = "levelID" column = "level_ID" />		   
+		     <result property = "levelName" column = "level_Name" /> 
+		   </association>
+	 </resultMap>
+  
+    <select id="findByID" parameterType = "string" resultMap="UserMap">
+		SELECT 
+		u.user_ID , u.user_Password, u.user_Name , u.user_Gender, u.user_Nickname, u.user_Pic,u.user_Address,
+		g.group_ID, g.group_Name, g.group_Sum, g.group_Msg,
+		l.level_ID,l.level_Name
+		FROM 
+		users u LEFT JOIN tb_user_group g
+		ON
+		u.group_ID = g.group_ID  JOIN tb_level l
+		ON
+		u.level_ID = l.level_ID
+		WHERE 
+		u.user_ID = #{userID}
+  </select> 
+  
+  
+   <update id="updateUser" parameterType="User">
+        UPDATE users
+        SET
+        user_Nickname = #{userNickname},
+        user_Password = #{userPassword},
+        user_Gender = #{userGender},
+        user_Address = #{userAddress},
+        user_pic = #{userPic}
+        WHERE user_ID = #{userID}
+  </update>
+
+  <insert id="insertUser" parameterType="User">
+        INSERT INTO users(user_ID,level_ID,user_Name,user_Nickname,user_Password,user_Gender,user_Address,user_Pic)
+        VALUES (#{userID},#{level.levelID},#{userName},#{userNickname},#{userPassword},#{userGender},#{userAddress},#{userPic})
+  </insert>
+  
+    <update id="updateUserGroupID" parameterType="string">
+        UPDATE users
+        SET
+        group_ID = #{groupID}
+        WHERE user_ID = #{userID}
+  </update>
+  
+  <update id="updateUserLevel" parameterType="User">
+        UPDATE users
+        SET
+        level_ID = #{level.levelID}
+        WHERE user_ID = #{userID}
+  </update>
+  
+    <update id="updateLevelByID">
+        UPDATE users
+        SET
+        level_ID = #{levelID}
+        WHERE user_ID = #{userID}
+  </update>
+</mapper>

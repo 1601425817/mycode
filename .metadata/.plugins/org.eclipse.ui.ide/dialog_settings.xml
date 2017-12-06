@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="G:\BaiduYunDownload\redis\code\jedishm19"/>
+		<item value="F:\eclipse-workspace\作业—郑嘉文"/>
+		<item value="C:\Users\Administrator\Desktop\作业—郑嘉文"/>
+		<item value="C:\Users\Administrator\Desktop\黄福聪-servlet"/>
+		<item value="C:\Users\Administrator\Desktop\Jynweb1"/>
+	</list>
+	<section name="ResourceNavigator">
+		<item value="Aggregate for window 1499158758219" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+</section>

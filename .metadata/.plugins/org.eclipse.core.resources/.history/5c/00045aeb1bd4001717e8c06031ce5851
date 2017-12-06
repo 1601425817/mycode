@@ -1,0 +1,5 @@
+package lindi;
+
+public interface Meeting {
+
+}

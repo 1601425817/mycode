@@ -1,0 +1,11 @@
+package office;
+
+public interface PostService {
+	public void draft(); //ƒ‚∏Â
+	public void issued(); //«©∑¢
+	public void proofreading(); //–£∂‘
+	public void archive(); //πÈµµ
+	public void audit(); //…Û∫À
+	public void print(); // ¥Ú”°
+	public void 
+}

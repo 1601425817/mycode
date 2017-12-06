@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;servlet.delete.java&apos; to &apos;deleteServlet.java&apos;&#x0D;&#x0A;- Original project: &apos;servletLogin&apos;&#x0D;&#x0A;- Original element: &apos;servlet.delete.java&apos;&#x0D;&#x0A;- Renamed element: &apos;servlet.deleteServlet.java&apos;" description="Rename compilation unit &apos;delete.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;servlet{delete.java" name="deleteServlet.java" references="false" stamp="1500816075287" version="1.0"/>
+</session>

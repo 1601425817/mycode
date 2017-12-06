@@ -1,0 +1,10 @@
+package office;
+
+/*
+ * 资产管理
+ */
+public interface assetsService {
+	public void computer(); //电脑管理
+	public void printer(); //打印机管理
+	public void mechanical(); //
+}

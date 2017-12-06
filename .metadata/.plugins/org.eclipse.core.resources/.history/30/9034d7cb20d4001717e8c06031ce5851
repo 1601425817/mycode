@@ -1,0 +1,8 @@
+package office;
+
+/*
+ * 办公用品管理
+ */
+public interface OfficeSuppliesService {
+	
+}

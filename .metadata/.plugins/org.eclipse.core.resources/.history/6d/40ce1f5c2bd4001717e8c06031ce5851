@@ -1,0 +1,14 @@
+package office;
+
+import java.util.List;
+
+/*
+ * 会议管理
+ */
+public interface MeetingService {
+	public boolean bookingMeeting();  //预订会议
+	public List<Meeting> searchingMeeting(String searchingArgs);  //查找会议
+	public void changeMeeting(); //修改会议
+	public void recordMeeting(); //记录会议
+	
+}

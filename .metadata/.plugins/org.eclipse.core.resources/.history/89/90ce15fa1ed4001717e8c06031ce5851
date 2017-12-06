@@ -1,0 +1,9 @@
+package office;
+
+/*
+ * 车辆管理服务
+ */
+public interface CarService {
+	public void carAudit(); //收文审核
+	public void 
+}

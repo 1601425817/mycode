@@ -1,0 +1,9 @@
+package office;
+
+/*
+ * 收文管理
+ */
+public interface ReceiveService {
+	public void registration(); //收文登记
+	public void distribute(); //分发
+}

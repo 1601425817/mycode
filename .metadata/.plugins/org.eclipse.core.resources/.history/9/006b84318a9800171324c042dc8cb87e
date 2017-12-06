@@ -1,0 +1,33 @@
+package sort;
+
+public class Sort {
+	
+	public static void exch(int[] array, int a, int b) {
+		int temp = array[a];
+		array[a] = array[b];
+		array[b] = temp;
+	}
+	
+	public static void MySelectSort(int[] array)
+	{
+		int N = array.length;
+		if(N == 0 || N == 1) {
+			return;
+		}
+		int min = 0;
+		for(int i = 0; i < N -1; i++) {
+			for(int j = i+1; j < N; j++) {
+				if(array[j] < array[min]) {
+					min = j;
+				}
+			}
+			exch(array, i, min);
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int []array = {9,8,7,6,5,4,3,2,1};
+
+	}
+
+}

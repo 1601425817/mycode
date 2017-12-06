@@ -1,0 +1,30 @@
+
+public class TestDaemon {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyDaemon md = new MyDaemon();
+		System.out.println(md.isDaemon());
+		for(int i = 1; i < 100; i++)
+		{
+			new MyDaemon();
+		}
+		System.out.println("main over");
+	}
+
+}
+
+class MyDaemon extends Thread{
+	public MyDaemon()
+	{
+		this.setDaemon(true);
+		this.start();
+	}
+	public void run()
+	{
+		while(true)
+		{
+			System.out.println("守护"+Thread.currentThread().getName());
+		}
+	}
+}

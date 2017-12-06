@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pcq.ssm.mapper.DepartmentMapper">
+	<resultMap id="DepartmentMap" type="Department">
+		<id property="did" column="did" />
+  		<result property="name" column="name" />
+  		<result property="manager" column="manager" />
+  		<collection property="employees" ofType="Employee">
+			<id property="eid" column="eid" />
+			<result property="name" column="name" />
+			<result property="age" column="age" />
+			<result property="birth" column="birth" />
+		</collection>
+	</resultMap>
+	<select id="showDepartment" parameterType="int" resultMap="DepartmentMap">
+		select 
+			d.did, d.name, d.manager, e.eid, e.name, e.age, e.birth
+		from department d, employee e
+		where #{id}=d.did and #{id}=e.did
+	</select>
+</mapper>

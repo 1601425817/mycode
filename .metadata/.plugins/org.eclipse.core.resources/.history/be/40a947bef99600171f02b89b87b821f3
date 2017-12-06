@@ -1,0 +1,25 @@
+import javax.sound.midi.Track;
+
+class runThread extends Thread{
+
+	@Override
+	public void run() {
+		System.out.println("i am run");
+
+	}
+	
+}
+public class TestRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			System.out.println("begin main"+Thread.currentThread().setPriority(6));
+			runThread mythread = new runThread();
+			mythread.start();
+			System.out.println("中间");
+			mythread.interrupt();
+			System.out.println("end");
+			
+	}
+
+}

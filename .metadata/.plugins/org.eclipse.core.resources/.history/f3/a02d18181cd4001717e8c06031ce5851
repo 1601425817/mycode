@@ -1,0 +1,6 @@
+package lindi;
+
+public interface Meeting {
+	public void BookingMeeting();  //‘§∂©ª·“È
+	
+}

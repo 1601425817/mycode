@@ -1,0 +1,8 @@
+package office;
+
+/*
+ * 资产管理
+ */
+public interface assetsService {
+	public void computer();
+}

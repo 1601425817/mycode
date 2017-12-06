@@ -1,0 +1,26 @@
+
+
+public class TestRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyThread mythread = new MyThread();
+		mythread.start();
+		for(int i = 0; i < 100; i++)
+		{
+			System.out.println("main  "+i);
+		}
+	}
+
+}
+class Mytread extends Thread{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+			System.out.println("mythread  ");
+		
+	}
+	
+}
